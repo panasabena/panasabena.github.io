@@ -139,19 +139,6 @@ h2::before{content:'';width:12px;height:12px;border-radius:50%;background:linear
 @media(hover:none){.more{grid-template-rows:1fr;opacity:1}.hint{display:none}}
 @media(max-width:720px){section.block{padding:4rem 1.2rem}.node{padding:1.2rem}.node:hover,.node:focus,.node:focus-within{transform:none}}
 
-/* PROJECTS */
-.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem}
-.proj{display:flex;flex-direction:column;gap:.5rem;padding:1.4rem;text-decoration:none;color:inherit;transition:all .3s}
-.proj:hover{border-color:rgba(32,212,255,.55);transform:translateY(-4px);box-shadow:0 16px 40px rgba(42,123,255,.2)}
-.proj h3{font-family:var(--display);font-weight:600;font-size:1.12rem;color:var(--text);display:flex;justify-content:space-between;gap:.6rem}
-.proj h3 .arr{color:var(--cyan);transition:transform .3s}
-.proj:hover h3 .arr{transform:translate(3px,-3px)}
-.proj p{color:var(--soft);font-size:.9rem;flex:1}
-.lang-dot{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--muted);display:flex;align-items:center;gap:.4rem}
-.lang-dot::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--c,#3572A5)}
-.proj.feat{grid-column:span 2;background:linear-gradient(135deg,rgba(32,212,255,.10),rgba(42,123,255,.10),rgba(163,77,255,.10));border-color:rgba(32,212,255,.35)}
-@media(max-width:620px){.proj.feat{grid-column:auto}}
-
 /* STACK */
 .stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem}
 .sgroup{padding:1.4rem}
@@ -190,7 +177,6 @@ footer{padding:7rem clamp(1.2rem,6vw,6rem) 3rem;text-align:center}
   <ul>
     <li><a href="#sobre-mi"><span class="es">Sobre mí</span><span class="en">About</span></a></li>
     <li><a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a></li>
-    <li><a href="#proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#formacion"><span class="es">Formación</span><span class="en">Education</span></a></li>
   </ul>
@@ -362,54 +348,6 @@ footer{padding:7rem clamp(1.2rem,6vw,6rem) 3rem;text-align:center}
           </ul>
         </div></div>
       </article>
-    </div>
-  </section>
-
-  <section class="block rv" id="proyectos">
-    <h2><span class="es">Proyectos</span><span class="en">Projects</span></h2>
-    <div class="projects">
-      <div class="proj card feat">
-        <h3>Real Automations <span class="arr">◆</span></h3>
-        <p class="es">CRM SaaS multi-tenant con agentes de IA por voz y WhatsApp para PyMEs. Latencia &lt;600 ms, +20 funcionalidades.</p>
-        <p class="en">Multi-tenant SaaS CRM with AI voice and WhatsApp agents for SMBs. Sub-600 ms latency, 20+ features.</p>
-        <span class="lang-dot" style="--c:#3572A5">Python · FastAPI · PostgreSQL · Twilio</span>
-      </div>
-      <a class="proj card" href="https://github.com/panasabena/Google_Maps_Scraper" target="_blank" rel="noopener">
-        <h3>Google Maps Scraper <span class="arr">↗</span></h3>
-        <p class="es">Extracción automatizada de datos de negocios desde Google Maps.</p>
-        <p class="en">Automated extraction of business data from Google Maps.</p>
-        <span class="lang-dot" style="--c:#3572A5">Python</span>
-      </a>
-      <a class="proj card" href="https://github.com/panasabena/ZillowScraper" target="_blank" rel="noopener">
-        <h3>Zillow Scraper <span class="arr">↗</span></h3>
-        <p class="es">Scraper de datos de agentes inmobiliarios de Zillow.</p>
-        <p class="en">Data scraper for Zillow real estate agents.</p>
-        <span class="lang-dot" style="--c:#e34c26">HTML</span>
-      </a>
-      <a class="proj card" href="https://github.com/panasabena/Dashboard_Plotly" target="_blank" rel="noopener">
-        <h3>Dashboard Plotly <span class="arr">↗</span></h3>
-        <p class="es">Dashboard interactivo construido con Plotly.</p>
-        <p class="en">Interactive dashboard built with Plotly.</p>
-        <span class="lang-dot" style="--c:#e34c26">HTML</span>
-      </a>
-      <a class="proj card" href="https://github.com/panasabena/Proyecto_Properatti" target="_blank" rel="noopener">
-        <h3>Properatti <span class="arr">↗</span></h3>
-        <p class="es">Análisis y predicción de precios de propiedades en la provincia de Buenos Aires.</p>
-        <p class="en">Analysis and price prediction for properties in Buenos Aires province.</p>
-        <span class="lang-dot" style="--c:#DA5B0B">Jupyter Notebook</span>
-      </a>
-      <a class="proj card" href="https://github.com/panasabena/Procesamiento_de_lenguaje_Natural" target="_blank" rel="noopener">
-        <h3><span class="es">NLP de reseñas</span><span class="en">Review NLP</span> <span class="arr">↗</span></h3>
-        <p class="es">Predicción de sentimiento sobre comentarios y compras de Amazon.</p>
-        <p class="en">Sentiment prediction on Amazon reviews and purchases.</p>
-        <span class="lang-dot" style="--c:#DA5B0B">Jupyter Notebook</span>
-      </a>
-      <a class="proj card" href="https://github.com/panasabena/Analisis_exploratorio_de_tweepy" target="_blank" rel="noopener">
-        <h3><span class="es">Sentimiento en Twitter</span><span class="en">Twitter sentiment</span> <span class="arr">↗</span></h3>
-        <p class="es">Análisis exploratorio de datos y sentimiento de tweets.</p>
-        <p class="en">Exploratory data and sentiment analysis of tweets.</p>
-        <span class="lang-dot" style="--c:#DA5B0B">Jupyter Notebook</span>
-      </a>
     </div>
   </section>
 
